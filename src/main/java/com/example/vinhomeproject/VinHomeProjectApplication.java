@@ -9,5 +9,4 @@ public class VinHomeProjectApplication {
     public static void main(String[] args) {
         SpringApplication.run(VinHomeProjectApplication.class, args);
     }
-    /ff
 }
