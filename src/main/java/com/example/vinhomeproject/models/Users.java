@@ -44,4 +44,10 @@ public class Users extends  Base {
     @OneToMany(mappedBy = "users")
     @JsonIgnore
     private Set<Notifications> notifications;
+
+    @OneToMany(mappedBy = "users")
+    @JsonIgnore
+    private Set<Appointment> appointments;
+
+
 }

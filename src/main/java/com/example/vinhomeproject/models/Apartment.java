@@ -46,7 +46,7 @@ public class Apartment extends Base{
     private int gas_stoves;
 
 
-    @OneToMany(mappedBy = "apartment_class")
+    @OneToMany(mappedBy = "apartment")
     @JsonIgnore
     private Set<ApartmentClass> apartment_class;
 
@@ -57,5 +57,13 @@ public class Apartment extends Base{
     @OneToMany(mappedBy = "apartment")
     @JsonIgnore
     private Set<Review> reviews;
+
+    @OneToMany(mappedBy = "apartment")
+    @JsonIgnore
+    private Set<Appointment> appointments;
+
+    @OneToMany(mappedBy = "apartment")
+    @JsonIgnore
+    private Set<Post> posts;
 
 }

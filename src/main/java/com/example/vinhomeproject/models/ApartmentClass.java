@@ -30,5 +30,5 @@ public class ApartmentClass {
 
     @ManyToOne
     @JoinColumn(name = "apartment_id")
-    private Apartment apartment_class;
+    private Apartment apartment;
 }
