@@ -31,4 +31,8 @@ public class Payment extends Base{
     @JoinColumn(name = "contract_id")
     private Contract contract;
 
+    @ManyToOne
+    @JoinColumn(name = "payment_type_id")
+    private PaymentType paymentType;
+
 }
