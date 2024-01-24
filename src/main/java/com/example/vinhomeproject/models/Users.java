@@ -7,6 +7,7 @@ import jakarta.persistence.Table;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -49,5 +50,8 @@ public class Users extends  Base {
     @JsonIgnore
     private Set<Appointment> appointments;
 
+    @OneToMany(mappedBy = "users")
+    @JsonIgnore
+    private List<Token> tokens;
 
 }
